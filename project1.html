@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>متجر نزار للإلكترونيات</title>
+
+  <!-- ربط ملف CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- أيقونة الخطوط والرموز -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+<!-- أيقونة الخطوط والرموز -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- رأس الصفحة -->
+<header>
+  <button onclick="toggleTheme()" style="position:absolute; top:20px; right:20px; background:#00e676; border:none; padding:8px 14px; border-radius:12px; font-weight:bold; cursor:pointer;">تبديل الوضع</button>
+
+  <div class="typing-text" aria-label="عنوان المتجر">
+    متجر نزار للإلكترونيات
+  </div>
+</header>
+
+<!-- منيو التنقل -->
+<nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
+  <a href="#phones" tabindex="0">هواتف</a>
+  <a href="#laptops" tabindex="0">لابتوبات</a>
+  <a href="#chargers" tabindex="0">شواحن</a>
+  <a href="#screens" tabindex="0">شاشات</a>
+</nav>
+<!-- أزرار إضافية للبحث والذهاب للسلة -->
+<div style="text-align: center; margin: 50px auto;">
+  <input type="text" id="searchInput" placeholder="ابحث عن منتج بالاسم..." style="padding: 12px 20px; font-size: 18px; border-radius: 12px; border: none; width: 280px; max-width: 80%; margin-bottom: 20px;" onkeyup="searchProduct()" />
+  <br />
+
+
+</div>
+<!-- أقسام المنتجات -->
+<section id="laptops" aria-label="قسم اللابتوبات">
+  
+  <h2 class="section-title">لابتوبات</h2>
+  <div class="products">
+    <!-- منتج 1 -->
+    <div class="product-card" tabindex="0" aria-describedby="desc-laptop1" role="group">
+      <img src="images/L1.jpeg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/LA1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️⭐️☆ (4.0)
+</div>
+
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('لابتوب موديل 1')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <p id="desc-laptop1" class="visually-hidden">لابتوب موديل 1 مع مواصفات عالية وأداء ممتاز.</p>
+    </div>
+    <!-- منتج 2 -->
+    <div class="product-card" tabindex="0" aria-describedby="desc-laptop2" role="group">
+      
+      <img src="images/L2.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/LA1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('لابتوب موديل 2')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <p id="desc-laptop2" class="visually-hidden">لابتوب موديل 2 مع شاشة عالية الجودة وبطارية قوية.</p>
+    </div>
+    <!-- منتج 3 -->
+    <div class="product-card" tabindex="0" aria-describedby="desc-laptop3" role="group">
+    <img src="images/L4.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/LA1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('لابتوب موديل 3')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <p id="desc-laptop3" class="visually-hidden">لابتوب موديل 3 مع معالج قوي ومساحة تخزين كبيرة.</p>
+    </div>
+    <!-- منتج 4 -->
+    <div class="product-card" tabindex="0" aria-describedby="desc-laptop4" role="group">
+     <img src="images/OIP.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/LA1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+             <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('لابتوب موديل 4')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <p id="desc-laptop4" class="visually-hidden">لابتوب موديل 4 مزود بكارت شاشة مميز وتصميم أنيق.</p>
+    </div>
+  </div>
+  <div class="more-link" tabindex="0" role="button" onclick="alert('المزيد من عروض اللابتوبات قيد الإعداد')">مزيد من عروض اللابتوبات...</div>
+</section>
+
+Nizar bin Othman, [6/26/2025 4:47 PM]
+<section id="phones" aria-label="قسم الهواتف">
+  <h2 class="section-title">هواتف</h2>
+  <div class="products">
+    <!-- صور هواتف بنفس التنسيق -->
+    <div class="product-card" tabindex="0" role="group">
+      
+      <img src="images/p1.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/pt1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('هاتف موديل 1')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+       <img src="images/p2.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/pt1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('هاتف موديل 2')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+       <img src="images/p3.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/pt1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('هاتف موديل 3')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+     
+       <img src="images/OIP10.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/pt1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('هاتف موديل 4')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="more-link" tabindex="0" role="button" onclick="alert('المزيد من عروض الهواتف قيد الإعداد')">مزيد من عروض الهواتف...</div>
+</section>
+
+
+<section id="chargers" aria-label="قسم الشواحن">
+  <h2 class="section-title">شواحن</h2>
+  <div class="products">
+    <!-- صور شواحن -->
+    <div class="product-card" tabindex="0" role="group">
+     
+      <img src="images/sh1.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/sht1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('شاحن موديل 1')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+      <img src="images/sh2.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/sht1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('شاحن موديل 2')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+       <img src="images/sh3.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/sht1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('شاحن موديل 3')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+      <img src="images/sh4.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/sht1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('شاحن موديل 4')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="more-link" tabindex="0" role="button" onclick="alert('المزيد من عروض الشواحن قيد الإعداد')">مزيد من عروض الشواحن...</div>
+</section>
+
+
+<section id="screens" aria-label="قسم الشاشات">
+  <h2 class="section-title">شاشات</h2>
+  <div class="products">
+    <!-- صور شاشات -->
+    <div class="product-card" tabindex="0" role="group">
+       <img src="images/sm1.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/smt1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('شاشة موديل 1')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+      <img src="images/sm2.jpeg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/smt1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (3.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('شاشة موديل 2')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+      <img src="images/sm3.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/smt1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('شاشة موديل 3')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+    <div class="product-card" tabindex="0" role="group">
+       <img src="images/sm4.jpg" alt="لابتوب موديل 1" />
+     <img class="img2" src="images/smt1.jpg" alt="لابتوب موديل 1 - صورة بديلة" />
+      <div style="text-align:center; padding:8px;">
+  ⭐️⭐️⭐️☆☆ (4.0)
+</div>
+      <div class="product-overlay" aria-hidden="true">
+        <button aria-label="إضافة إلى المفضلة"><i class="fa-regular fa-heart"></i></button>
+        <button aria-label="عرض مواصفات" onclick="showSpecs('شاشة موديل 4')"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="more-link" tabindex="0" role="button" onclick="alert('المزيد من عروض الشاشات قيد الإعداد')">مزيد من عروض الشاشات...</div>
+</section>
+<!-- أزرار إضافية للبحث والذهاب للسلة -->
+<div style="text-align: center; margin: 50px auto;">
+ 
+  <button onclick="goToCart()" style="padding: 12px 30px; font-size: 18px; background: #00e676; color: #00320c; border: none; border-radius: 18px; font-weight: 700; cursor: pointer; transition: background 0.3s;">
+    الذهاب إلى السلة
+  </button>
+</div>
+<div class="thankyou-popup" id="thankyou-popup" role="dialog" aria-modal="true" aria-labelledby="thankyou-title">
+  <div class="close-btn" onclick="closeThankYou()">&times;</div>
+  <h3 id="thankyou-title">🎉 شكراً لطلبك!</h3>
+  <p>سنتواصل معك قريبًا عبر البيانات التي أدخلتها. نشكرك على ثقتك بمتجر نزار للإلكترونيات.</p>
+  <div class="popup-buttons">
+    <button onclick="closeThankYou()">إغلاق</button>
+  </div>
+</div>
+
+
+<!-- قسم من نحن -->
+<section class="about" aria-label="من نحن">
+  <h2 class="section-title" style="color:#a0e6a0;">من نحن</h2>
+  <p>
+    نحن في متجر نزار للإلكترونيات نقدم لك أفضل المنتجات بأحدث التقنيات وأفضل الأسعار. هدفنا هو خدمتكم بكل أمانة واحترافية لنلبي جميع احتياجاتكم التقنية مع ضمان جودة وخدمة ما بعد البيع.
+  </p>
+</section>
+
+<!-- فوتر -->
+<footer role="contentinfo">
+  <div>
+    <h3>اتصل بنا</h3>
+    <p>رقم الهاتف: 0123456789</p>
+    <p>البريد الإلكتروني: info@nizarstore.com</p>
+  </div>
+  <div>
+    <h3>موقعنا</h3>
+    <p>طرابلس، ليبيا</p>
+  </div>
+  <div>
+    <h3>صفحتنا الشخصية</h3>
+    <p><a href="https://www.facebook.com/nizarstore" target="_blank" style="color:#00e676;">Facebook</a></p>
+    <p><a href="https://www.instagram.com/nizarstore" target="_blank" style="color:#00e676;">Instagram</a></p>
+  </div>
+  <div style="width: 100%; text-align: center; margin-top: 25px; font-size: 14px; color: #60c060;">
+    &copy; 2025 متجر نزار للإلكترونيات - جميع الحقوق محفوظة
+  </div>
+</footer>
+
+<!-- أيقونة السلة -->
+<div class="cart-icon" tabindex="0" aria-label="السلة. اضغط لفتح السلة" role="button" onclick="openCart()">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <div class="cart-badge" id="cart-count">0</div>
+</div>
+
+<!-- نافذة المواصفات -->
+<div class="popup" id="spec-popup" role="dialog" aria-modal="true" aria-labelledby="spec-title" aria-describedby="spec-desc">
+  <div class="close-btn" tabindex="0" role="button" aria-label="إغلاق" onclick="closeSpecs()">&times;</div>
+  <h3 id="spec-title">مواصفات المنتج</h3>
+  <p id="spec-desc">يتم عرض المواصفات هنا.</p>
+  <div class="popup-buttons">
+    <button onclick="addToCart()">إضافة إلى السلة</button>
+    <button onclick="closeSpecs()">إلغاء</button>
+  </div>
+</div>
+
+<!-- نافذة السلة -->
+<div class="cart-popup" id="cart-popup" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+  <div class="close-btn" tabindex="0" role="button" aria-label="إغلاق" onclick="closeCart()">&times;</div>
+  <h3 id="cart-title">سلة مشترياتك</h3>
+  <div id="cart-items" style="margin-bottom: 20px;">
+    لا توجد منتجات في السلة.
+  </div>
+
+  <form id="checkout-form" onsubmit="submitOrder(event)">
+    <label for="phone">رقم الهاتف:</label>
+    <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك" required />
+
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required />
+
+    <label for="website">موقعك الإلكتروني (اختياري):</label>
+    <input type="url" id="website" name="website" placeholder="مثال: https://example.com" />
+
+    <button type="submit" class="submit-btn">تأكيد الطلب</button>
+  </form>
+</div>
+<!-- زر العودة لأعلى الصفحة -->
+<button id="scrollTopBtn" title="الرجوع للأعلى">↑</button>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>
